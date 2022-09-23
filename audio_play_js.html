@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="audio">
+        <source src="/audio/[TRAP MIX]_ Unki Taraf Se -Nusrat Fateh Ali Khan remix  music factory remix NFAK REMIX.m4a" type="audio">
+    </audio>
+    <button id="play" onclick="play()">play &#9658</button>
+    <button onclick="stop()">Stop &#9611</button>
+
+
+    <script>
+var audio = document.getElementById('audio');
+var playmusic  = document.getElementById('play');
+var count = 0;
+play = ()=>{
+    if(count == 0){
+     count = 1;
+     audio.play();
+     playmusic.innerHTML = "Pause &#9208"
+    
+    }
+    else{
+        count = 0;
+       
+        audio.pause();
+        playmusic.innerHTML = "Play &#9658"
+    }
+}
+function stop(){
+    playmusic();
+    audio.pause();
+    audio.currentTime = 0;
+    playmusic.innerHTML = "Play &#9658"
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time">The time is </h1>
+    <span id="hour">00</span>
+    <span>:</span>
+    <span id="minut">00</span>
+    <samp >:</samp>
+    <span id="sec">00</span>
+
+
+
+    <script>
+        // function abc(name){
+        //     console.log("helo my name is najam " + name);
+        // }
+// settimeout is the function that apper one one time 
+        // abc();
+    //    timeout=  setTimeout(abc , 1000 , "asad");
+    //    console.log(timeout);
+    //    clearTimeout(timeout);
+    // setInterval(abc ,1000);
+    function display(){
+        time = new Date();
+        hour = time.getHours();
+        minut = time.getMinutes();
+        sec = time.getSeconds();
+        console.log(sec);
+        console.log(minut);
+        console.log(hour);
+        console.log(time);
+        document.getElementById('hour').innerHTML = hour;
+        document.getElementById('minut').innerHTML = minut;
+        document.getElementById('sec').innerHTML = sec;
+        document.getElementById('time').innerText = time;
+
+    }
+   setInterval(display  , 1000);
+ ;
+    </script>
+</body>
+</html>

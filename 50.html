@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <!-- <div class="element">
+          <h1>helo word</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis placeat quis eum sunt, veritatis cumque quibusdam eaque
+            eos molestiae repudiandae eius est distinctio adipisci maxime
+            dolores unde ipsum dolorum iste.
+          </p>
+        </div> -->
+        <input type="number" name="" id="feet" value="1" />
+        <h1>=</h1>
+        <input type="number" name="" id="inch" value="20" />
+      </div>
+    </div>
+
+    <script>
+      //   let element;
+      //   element = document.all[6];
+      //   console.log(element);
+      //
+      var feet = document.getElementById("feet");
+      var inch = document.getElementById("inch");
+      feet.addEventListener("input", function () {
+        let f = this.value;
+        let i = f * 12;
+        inch.value = i;
+      });
+    </script>
+  </body>
+</html>

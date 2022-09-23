@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+}
+.abc{
+    border: 3px solid crimson;
+}
+.xyz{
+    background-color: darkblue;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li id="first"  style="border:2px solid green ; color: white;"><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li class="abc" id="second"><a href="">home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        var a;
+        // var a = document.querySelector("#first").style.color;
+//   console.log(a)
+//   var color = document.querySelector("#firsrt").style.color;
+// var b = document.querySelector("#first").style.backgroundColor= "green";
+// var b = document.querySelector("#first").style.color= "red";
+// a = document.querySelector("#first").className = "abc xyz";
+a = document.querySelector("#first").classList.add("xyz");
+a = document.querySelector("#second").classList.remove("abc");
+console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: cornflowerblue;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="con">
+
+    </div>
+    <script>
+//  document.getElementById('con').onclick = abc;
+// function abc(){
+//     document.getElementById('con').style.background = "green"
+// }
+// document.getElementById('con').addEventListener('click', abc);
+// function abc(){
+//     document.getElementById('con').style.background = "green"
+// }
+document.getElementById('con').addEventListener('click', abc)
+   
+function abc(){
+   this.style.background = "green";
+}
+    </script>
+</body>
+</html>

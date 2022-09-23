@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="h1">this is the javascript String</h1>
+      <p id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+        atque.
+      </p>
+      <h2>if you Like Reding plz click blow</h2>
+      <button onclick="abc()">Click Hear</button>
+    </div>
+    <script>
+      var str = "This is the javascript oturial";
+      // document.write(str);
+      // document.write(str.toUpperCase());
+      // document.write(str.toLocaleLowerCase());
+      // document.write(str.includes('is'));
+      // document.write(str.startsWith('Th'));
+      // document.write(str.lastIndexOf('a'));
+      //   alert("Hleo");
+      //   let name = prompt("Please enter your Name");
+      //   document.write(name);
+      // let Delete = confirm("do you want to delte this Pic");
+      // document.write(Delete);
+      // if (Delete) {
+      //   document.write("delete sucessfully");
+      // } else {
+      //   document.write("post not be deleted");
+      // }
+      // alert("helo welcome to our website");
+      // let how = prompt("Helo who are you");
+      let name = prompt("what is your name");
+      // let age = prompt("how old are you");
+      document.write(
+        name + " <h1> Welcome to our website what do you like </h1>"
+      );
+      function abc() {
+        let name = document.getElementById("h1").value;
+
+        if (name == "najam") {
+          location.assign("http://facebook.com");
+        } else {
+          document.write("go back bro");
+        }
+      }
+
+      // let name = document.getElementById("h1").value;
+
+      // if (name == "najam") {
+      //   document.write("welcome bro");
+      // }
+    </script>
+  </body>
+</html>

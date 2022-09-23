@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .width{
+        background-color: brown;
+    }
+    .abc{
+        background-color: black;
+    }
+</style>
+<body>
+<header id="header">
+    <h1>my Name is najam</h1>
+</header>  
+    <div class="container" id="com">
+        <div class="width" id="helo" style="border:1px solid green">
+            <nav> 
+            
+                <ul id="ul" class="logo" onclick="abc()">
+                    <li><a href="">home</a></li>
+                    <li id="new"><a href="">Services</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+    //  var element =   document.getElementById('new').innerText;
+    //  console.log(element);
+    // var a = document.getElementById('ul').getAttributeNode("class").value;
+    // console.log(a);
+    // var element = document.getElementById('ul').attributes[1].name;
+    // console.log(element);
+
+    // var b=  document.getElementById("header").innerText="helo najam";
+    // console.log(b);
+    // var b=  document.getElementById("header").innerHTML=" my name is hanan ";
+    // console.log(b);
+    document.getElementById("helo").setAttribute('class','abc');
+    var b=  document.getElementById("com").getAttribute('class');
+    console.log(b);
+    </script>
+</body>
+</html>
